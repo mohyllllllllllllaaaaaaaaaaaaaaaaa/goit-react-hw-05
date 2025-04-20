@@ -29,8 +29,8 @@ return (
             </span>
             </div>
       <ul>
-        <li><Link to="cast" state={{ from: backLink }}>Cast</Link></li>
-        <li><Link to="reviews" state={{ from: backLink }}>Reviews</Link></li>
+        <li><Link to="cast" state={{ from: backLinkRef }}>Cast</Link></li>
+        <li><Link to="reviews" state={{ from: backLinkRef }}>Reviews</Link></li>
       </ul>
       <Outlet />
     </>
