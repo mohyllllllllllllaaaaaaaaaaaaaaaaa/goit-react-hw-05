@@ -1,0 +1,23 @@
+.isActive{
+    color: red;
+    font-weight: bold;
+}
+.link{
+    font-size: 16px;
+   margin-left: 30px;
+   font-size: 25px;
+}
+.nav{
+    gap: 20px;
+}
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px 20px;
+}
+body{margin-top: 50px;}

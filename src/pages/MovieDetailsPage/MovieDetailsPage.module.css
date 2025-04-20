@@ -1,0 +1,29 @@
+.headcard {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+  }
+  
+  .poster {
+    flex-shrink: 0; 
+  }
+  
+  .infomatio {
+    max-width: 600px; 
+    align-items: flex-start;
+   justify-items: flex-start;
+   margin-left: 12px;
+  }
+  
+  .title {
+   
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin: 5px 0;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
