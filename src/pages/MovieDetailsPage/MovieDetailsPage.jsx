@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams, Link, Outlet, useLocation } from "react-router-dom";
 import getMoviesData from "../../ApiService/ApiService";
 import css from './MovieDetailsPage.module.css';
@@ -7,16 +7,17 @@ const MovieDetailsPage = () => {
 const {movieId} = useParams();
 const location = useLocation();
 const[movie, setMovie] = useState(null);
+const backLinkRef = useRef(location.state?.from || '/movies');
 
 useEffect(() => { 
     getMoviesData({ type: 'id', query: movieId }).then(setMovie);
 },[movieId]);
 if(!movie) return <p>Loading...</p>
-const backLink = location.state?.from || '/movies';
+
 const genres = movie.genres ? movie.genres.map(genre => genre.name).join(', ') : 'N/A';
 return (
     <>
-    <Link to={backLink} className={css.link}>⬅️ Go back</Link>
+    <Link to={backLinkRef.current} className={css.link}>⬅️ Go back</Link>
     <h2 className={css.title}>{movie.title}</h2>
     <div className={css.headcard}>
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} width="200" className={css.poster}/>

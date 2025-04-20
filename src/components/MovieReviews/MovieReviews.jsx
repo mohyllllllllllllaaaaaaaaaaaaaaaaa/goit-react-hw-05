@@ -8,7 +8,7 @@ const MovieReviews = () =>{
     useEffect(() => {
       getMoviesData({ type: 'reviews', query: movieId }).then(data => {
         setReviews(data?.results || []);
-    })})
+    })}, [movieId])
     return(
         <ul>
             {reviews.length === 0 && <li>No reviews</li>}
