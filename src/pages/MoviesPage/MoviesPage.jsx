@@ -10,7 +10,7 @@ const MoviesPage = () => {
 const[searchParams, setSearchParams] = useSearchParams();
 const[movies, setMovies] = useState([]);
 const query = searchParams.get('query') || '';
-const[inPutValue, setInPutValue] = useState([]);
+const[inPutValue, setInPutValue] = useState('');
 
 useEffect(() => {
    
@@ -42,8 +42,7 @@ return (
     
     <div className={css.container}>
   <form className={css.form} onSubmit={handelSubmit}>
-    <input value={inPutValue} onChange={handelChenge} className={css.input}> 
-    </input>
+    <input value={inPutValue} onChange={handelChenge} className={css.input}/> 
     <button type="submit" className={css.button}>Search</button>
   </form>
   {query && movies.length === 0 && (<p>No movies found for your search. Try something else.</p>)}
