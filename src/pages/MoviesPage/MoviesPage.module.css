@@ -11,13 +11,13 @@
 }
 
 .container{
-    padding-top: 20px; 
-    margin-left: auto;
+    padding-top: 20px;  
     margin-right: auto;
     width: 100%;
+
 }
 .form {
-   
+   margin-left: 40px;
     display: flex;
     align-items: center;
     gap: 10px;

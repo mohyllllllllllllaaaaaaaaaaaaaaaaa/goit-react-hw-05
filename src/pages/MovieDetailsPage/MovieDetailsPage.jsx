@@ -16,7 +16,7 @@ const backLink = location.state?.from || '/movies';
 const genres = movie.genres ? movie.genres.map(genre => genre.name).join(', ') : 'N/A';
 return (
     <>
-    <Link to={backLink}>Go back</Link>
+    <Link to={backLink} className={css.link}>⬅️ Go back</Link>
     <h2 className={css.title}>{movie.title}</h2>
     <div className={css.headcard}>
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} width="200" className={css.poster}/>

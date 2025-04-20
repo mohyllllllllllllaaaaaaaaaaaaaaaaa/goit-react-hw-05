@@ -27,3 +27,8 @@
   p {
     margin-top: 10px;
   }
+  .link{
+    font-weight: bold;
+    align-items: flex-start;
+    
+  }
