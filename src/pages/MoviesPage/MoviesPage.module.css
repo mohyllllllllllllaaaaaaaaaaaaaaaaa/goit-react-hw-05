@@ -1,8 +1,21 @@
 .button{
-    background-color: rgb(220, 226, 237);
+    background-color: rgb(93, 80, 80);
     border: solid 1px rgb(50, 50, 50) ;
     width: 100px;
     padding: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border-radius: 8px;
+    color: aliceblue;
+}
+.button:hover {
+background-color: rgb(43, 73, 42);}
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }
 .input{
     padding: 9px;
@@ -14,6 +27,7 @@
     padding-top: 20px;  
     margin-right: auto;
     width: 100%;
+    padding-bottom: 80px;
 
 }
 .form {
@@ -21,5 +35,5 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px;
+
 }

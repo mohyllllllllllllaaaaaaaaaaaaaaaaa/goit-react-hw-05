@@ -11,9 +11,14 @@
   height: auto;
   margin: 8px;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.415);
 }
 .poster{
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+.title{
+  font-size: 20px;
+  margin-top: 5px;
 }

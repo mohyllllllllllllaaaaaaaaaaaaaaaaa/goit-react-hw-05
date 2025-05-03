@@ -42,7 +42,7 @@ return (
     
     <div className={css.container}>
   <form className={css.form} onSubmit={handelSubmit}>
-    <input value={inPutValue} onChange={handelChenge} className={css.input}/> 
+    <input value={inPutValue} onChange={handelChenge} className={css.input} placeholder="Search for a movie..."/> 
     <button type="submit" className={css.button}>Search</button>
   </form>
   {query && movies.length === 0 && (<p>No movies found for your search. Try something else.</p>)}
